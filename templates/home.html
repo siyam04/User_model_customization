@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <hr>
+    <h1>Home</h1>
+    <hr>
+    <br><br>
+
+    <!-- Dashboard -->
+    {% if user.is_authenticated %}
+        <h3>Welcome <b style="color: green">{{ user.username }}</b></h3><br>
+    {% else %}
+        <h1 style="color: red">You are not logged in!</h1>
+    {% endif %}
+    <!-- Dashboard -->
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+

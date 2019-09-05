@@ -1,0 +1,46 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+
+            <h2>Login</h2>
+            <hr>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <br><br>
+                <button type="submit" class="btn btn-success">LOGIN</button>
+            </form>
+
+{#            <form method="post" action="{% url 'login' %}">#}
+{#                {% csrf_token %}#}
+{##}
+{#                <label for="phone_number">phone_number:</label>#}
+{#                <input type="number" name="phone_number" placeholder="phone_number">#}
+{##}
+{#                <label for="password">password:</label>#}
+{#                <input type="text" name="password" placeholder="password">#}
+{##}
+{#                <input type="submit" name="" value="Login">#}
+{#            </form>#}
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
