@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class CustomUser(AbstractUser):
-    pass
+    USERNAME_FIELD = 'phone_number'
 
     def __str__(self):
         return str(self.phone_number)

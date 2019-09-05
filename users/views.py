@@ -14,22 +14,4 @@ class SignUpView(CreateView):
     template_name = 'signup.html'
 
 
-# def custom_login(request):
-#     if request.method == 'POST':
-#
-#         phone_number = request.POST.get('phone_number')
-#         password = request.POST.get('password2')
-#
-#         user = authenticate(phone_number=phone_number, password2=password)
-#
-#         if user:
-#             if user.is_active:
-#                 login(request, user)
-#                 return HttpResponseRedirect(reverse('home'))
-#             else:
-#                 return HttpResponse("Your account was inactive.")
-#         else:
-#             return render(request, 'registration/login.html', {})
-#     else:
-#         return render(request, 'registration/login.html', {})
 

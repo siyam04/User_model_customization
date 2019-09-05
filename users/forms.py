@@ -39,17 +39,6 @@ class CustomUserChangeForm(UserChangeForm):
         }
 
 
-# class LoginForm(forms.ModelForm):
-#
-#     class Meta:
-#         model = CustomUser
-#         fields = ('phone_number', 'username')
-#
-#         widgets = {
-#
-#             'phone_number': NumberInput(attrs={'class': 'form-control'}),
-#             'username': TextInput(attrs={'class': 'form-control'}),
-#         }
 
 
 
