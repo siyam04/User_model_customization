@@ -1,5 +1,4 @@
 # Django Auth User Model Customization
-* Live: 
 
 ## Instructions (Windows 10x64):
 * Some commands may differ depending on OS. Just google it.
